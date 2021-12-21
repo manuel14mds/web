@@ -1,0 +1,707 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Smooch&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Old Standard TT', serif;
+}
+
+body{
+    background-color: #171717;
+    overflow-x: hidden;
+}
+
+#grid{
+    display: grid;
+    grid-template-rows: 15vh auto 19vh;
+}
+/*_______________________________--------________________________________*/
+/* ----+++++_____________________ HEADER ______________________+++++---- */
+/*_______________________________--------________________________________*/
+.headerContainer{
+    background-color: #171717;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column-reverse;   
+}
+.headerContainer__logo{
+    display: flex;
+    align-items: center;
+    width: 7.5vh;
+    height: 7.5vh;
+    margin: auto;
+}
+.headerContainer__logo a img{
+    width: 100%;
+}
+nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul{
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #EDEDED;
+    padding: 9px;
+    font-size: 1em;
+}
+#selectedPage{
+    background-color: #DA0037;
+    padding: 22px 4px 22px 4px;
+}
+
+/*_______________________________--------________________________________*/
+/* ----+++++______________________ MAIN ______________________+++++---- */
+/*_______________________________--------________________________________*/
+main{
+    display: flex;
+    flex-direction: column;
+}
+.homeContainer{
+    background-color: #444444;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.homeContainer__image img{
+    width: 100vw;
+}
+.homeContainer__tittle{
+    background-color: #EDEDED;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.homeMessage{
+    color: #EDEDED;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*_______________________________----- main portfolio ----________________________________*/
+.portfolioContainer{
+    background-color: #444444;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainPortraitContainer{
+    background-color: #EDEDED;
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mainPortraitContainer img{
+    width: 100%;
+    border: solid white 5px;
+}
+.mainPortraitContainer img:hover{
+    filter: blur(2px);
+}
+.mainPlaceContainer{
+    background-color: #EDEDED;
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mainPlaceContainer img{
+    border: solid white 5px;
+    width: 100%;
+}
+.mainPlaceContainer img:hover{
+    filter:blur(2px)
+}
+/*_______________________________----- main about ----________________________________*/
+
+.mainTittle{
+    background-color: #444444;
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer{
+    background-color: #EDEDED;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.mainContainer__text{
+    width: 80vw;
+    text-align: justify;
+}
+.mainContainer__img{
+    width: auto;
+}
+.mainContainer__img img{
+    width: 100vw;
+}
+.mainComent{
+    background-color: #444444;
+    color: #EDEDED;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+}
+.mainComent p{
+    width: 80vw;
+}
+
+
+
+/*_______________________________----- main contact ----________________________________*/
+.mainContact{
+    background-color: #EDEDED;
+}
+.contactTittle{
+    text-align: center;
+    padding-top: 5vh;
+}
+.contactContainer{
+    background-color: #444444;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contactContainer__text{
+    color: #EDEDED;
+    font-size: 1em;
+    width: 90%;
+    padding: 2em;
+}
+.contactContainer__form{
+    width: 90%;
+    display: grid;
+    grid-template-areas: 
+    "item1"
+    "item2"
+    "item3"
+    "item4"
+    "item5"
+    "item6";
+    gap: 10px;
+    margin-bottom: 5vh;
+}
+.item{
+    color: #EDEDED;
+    width: 100%;
+}
+.item input{
+    width: 96%;
+}
+.item label{
+    padding: 10px;
+}
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+.item5{
+    grid-area: item5;
+}
+.item5 textarea{
+    width: 98%;
+}
+.item6{
+    grid-area: item6;
+    width: 98%;
+    background-color: #DA0037;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+/*_______________________________----- main portraits ----________________________________*/
+.portraitGaleryContainer{
+    background-color: #444444;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.portraitGaleryContainer__img{
+    width: 90vw;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.portraitGaleryContainer__img .image{
+    width: 80vw;
+    height: 80vw;
+    border: white 3px solid;
+}
+.portraitGaleryContainer__img .image1{
+    background-image: url(../img/IMG_1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.portraitGaleryContainer__img .image2{
+    background-image: url(../img/IMG_9.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.portraitGaleryContainer__img .image3{
+    background-image: url(../img/IMG_1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.portraitGaleryContainer__img .image3{
+    background-image: url(../img/IMG_2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.portraitGaleryContainer__img .image4{
+    background-image: url(../img/IMG_3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.portraitGaleryContainer__img .image5{
+    background-image: url(../img/IMG_4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.portraitGaleryContainer__img .image6{
+    background-image: url(../img/IMG_5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.portraitGaleryContainer__img .image7{
+    background-image: url(../img/IMG_6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.portraitGaleryContainer__img .image8{
+    background-image: url(../img/IMG_7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.portraitGaleryContainer__img .image9{
+    background-image: url(../img/IMG_8.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.portraitBottonTop{
+    text-align: center;
+}
+.portraitBottonTop a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #EDEDED;
+}
+
+
+
+
+/*_______________________________----- main places ----________________________________*/
+.placesGaleryContainer{
+    background-color: #444444;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.placesGaleryContainer__img{
+    width: 90vw;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.placesGaleryContainer__img .image{
+    width: 80vw;
+    height: 80vw;
+    border: white 3px solid;
+}
+.placesGaleryContainer__img .image1{
+    background-image: url(../img/IMG_\ a.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.placesGaleryContainer__img .image2{
+    background-image: url(../img/IMG_\ b.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.placesGaleryContainer__img .image3{
+    background-image: url(../img/IMG_\ c.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.placesGaleryContainer__img .image4{
+    background-image: url(../img/IMG_\ d.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.placesGaleryContainer__img .image5{
+    background-image: url(../img/IMG_\ e.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.placesGaleryContainer__img .image6{
+    background-image: url(../img/IMG_\ f.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.placesGaleryContainer__img .image7{
+    background-image: url(../img/IMG_\ g.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.placesGaleryContainer__img .image8{
+    background-image: url(../img/IMG_\ h.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.placesGaleryContainer__img .image9{
+    background-image: url(../img/IMG_\ i.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.placesBottonTop{
+    text-align: center;
+}
+.placesBottonTop a{
+    color: #EDEDED;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+
+
+
+/*_______________________________--------________________________________*/
+/* ----+++++_____________________ FOOTER ______________________+++++---- */
+/*_______________________________--------________________________________*/
+footer{
+    background-color: #DA0037;
+    display: flex;
+    flex-direction: column;
+    
+}
+.footerSignature{
+    width: 100;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerSignature label{
+    font-size: 2em;
+    font-family: 'Smooch', cursive;
+}
+.footerSocialMedia{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerSocialMedia li{
+    display: inline;
+    padding-right: 20px;
+}
+.footerSocialMedia ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/*_______________________________xxxxxxxxxxxxx________________________________*/
+/* ----+++++_____________________ MEDIA QUERY ______________________+++++---- */
+/*_______________________________xxxxxxxxxxxxx________________________________*/
+
+
+@media (min-width: 558px) {
+    /*_______________________________xxxxxxx HEADER 558px IPAD xxxxxx________________________________*/
+    #grid{
+        display: grid;
+        grid-template-rows: 15vh auto 19vh;
+    }
+    .headerContainer{
+        flex-direction: row;
+    }
+    
+    .headerContainer__logo{
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+    .headerContainer__logo a img{
+        width: 100%;
+        height: auto;
+    }
+    nav{
+        width: 80vw;
+        justify-content: flex-end;
+    }
+    nav ul li a{
+        font-size: 1.3em;
+    }
+    /*_______________________________xxxxxx FOOTER 558px IPAD xxxxxxx________________________________*/
+    footer{
+        flex-direction: row;
+    }
+    .footerSignature{
+        width: 40%;
+    }
+    .footerSignature label{
+        font-size: 1.8em;
+    }
+    .footerSocialMedia{
+        width: 60%;
+        height: 100%;
+    }
+    .footerSocialMedia li{
+        padding-right: 7px;
+        margin: 3px;
+    }
+    .footerSocialMedia ul li a{
+        font-size: 1em;
+    }
+    /*_______________________________xxxxxx MAIN HOME 558px IPAD xxxxxxx________________________________*/
+
+    .homeContainer{
+        flex-direction: row-reverse;
+        justify-content: left;
+    }
+    
+    .homeContainer__image{
+        width: 60vw;
+    }
+    .homeContainer__tittle{
+        width: 45vw;
+        height: 40vw;
+        position: absolute;
+        align-self: center;
+        font-size: 0.8em;
+    }
+    .homeMessage{
+        height: 15vh;
+        font-size: 1.5em;
+    }
+    /*_______________________________xxxxxx MAIN PORTFOLIO 558px IPAD xxxxxxx_____________________________*/
+    .portfolioContainer{
+
+        height: auto;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .mainPortraitContainer{
+        width: 47vw;
+    }
+    .mainPortraitContainer h2{
+        font-size: 2em;
+        margin-top: 5vh;
+    }
+    .mainPlaceContainer{
+        width: 47vw;
+    }
+    .mainPlaceContainer h2{
+        font-size: 2em;
+        margin-top: 5vh;
+    }
+    /*_______________________________xxxxxx MAIN ABOUT 558px IPAD xxxxxxx_____________________________*/
+    .mainContainer{
+        flex-direction: row;
+        gap: 30px;
+    }
+    .mainTittle{
+        font-size: 2em;
+    }
+    .mainContainer__text{
+        width: 30vw;
+    }
+    .mainContainer__img{
+        width: 50vw;
+    }
+    .mainContainer__img img{
+        height: auto;
+        width: 100%;
+    }
+    /*_______________________________xxxxxx MAIN CONTACT 558px IPAD xxxxxxx________________________________*/
+    .contactContainer{
+        flex-direction: row;
+        gap: 5vw;
+        justify-content: center;
+    }
+    .contactContainer__text{
+        width: 45vw;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactContainer__form{
+        width: 45vw;
+        grid-template-areas:
+        "item1 item2"
+        "item3 item4"
+        "item5 item5"
+        "item6 item6";
+    }
+    
+    .contactTittle{
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    
+    
+    
+    
+    
+    /*_______________________________xxxxxx MAIN PORTRAITS 558px IPAD xxxxxxx________________________________*/
+    .portraitGaleryContainer__img{
+        flex-direction: initial;
+        flex-wrap: wrap;
+        
+    }
+    .portraitGaleryContainer__img .image{
+        width: 40vw;
+        height: 40vw;
+    }
+    /*_______________________________xxxxxx MAIN PLACES 558px IPAD xxxxxxx________________________________*/
+    .placesGaleryContainer__img{
+        flex-direction: initial;
+        flex-wrap: wrap;
+        
+    }
+    .placesGaleryContainer__img .image{
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+
+
+
+@media (min-width: 1081px) {
+    /*_______________________________xxxxxxx HEADER 1081px DESKTOP xxxxxx________________________________*/
+    .headerContainer__logo{
+        width: 100px;
+        height: 100px;
+    }
+    .headerContainer nav ul{
+        margin-right: 5%;
+    }
+    nav ul li a{
+        font-size: 1.8em;
+        padding: 10px;
+    }
+    nav ul li{
+        margin: 5px;
+    }
+    /*_______________________________xxxxxx FOOTER 1081px DESKTOP xxxxxxx________________________________*/
+    .footerSignature label{
+        font-size: 2.5em;
+    }
+    .footerSocialMedia li{
+        padding-right: 15px;
+    }
+    .footerSocialMedia ul li a{
+        font-size: 1.5em;
+    }
+
+    /*_______________________________xxxxxx MAIN HOME 1081px DESKTOP xxxxxxx________________________________*/
+    .homeContainer__image{
+        width: 50vw;
+    }
+    .homeContainer__tittle{
+        width: 47vw;
+        font-size: 1.3em;
+    }
+    /*_______________________________xxxxxx MAIN PORTFOLIO 1081px DESKTOP xxxxxxx_____________________________*/
+    .portfolioContainer{
+        height: auto;
+        gap: 30px;
+    }
+    .mainPortraitContainer{
+        width: 35vw;
+    }
+    .mainPortraitContainer h2{
+        margin-top: 10vh;
+        font-size: 2.5em;
+    }
+    .mainPlaceContainer{
+        width: 35vw;
+    }
+    .mainPlaceContainer h2{
+        margin-top: 10vh;
+        font-size: 2.5em;
+    }
+    /*_______________________________xxxxxx MAIN ABOUT 1081px DESKTOP xxxxxxx_____________________________*/
+    .mainContainer__text{
+        width: 45vw;
+        font-size: 20px;
+    }
+    /*_______________________________xxxxxx MAIN CONTACT 1081px DESKTOP xxxxxxx_____________________________*/
+    .mainContact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .contactContainer{
+        width: 1100px;
+    }
+    .contactTittle{
+        width: 100vw;
+    }
+
+
+    /*_______________________________xxxxxx MAIN PORTRAITS 1081px xxxxxxx________________________________*/
+    
+    .portraitGaleryContainer__img .image{
+        width: 25vw;
+        height: 25vw;
+    }
+    /*_______________________________xxxxxx MAIN PLACES 1081px xxxxxxx________________________________*/
+    
+    .placesGaleryContainer__img .image{
+        width: 25vw;
+        height: 25vw;
+    }
+    
+}
+
+
+
