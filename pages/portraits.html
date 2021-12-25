@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/normalize.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
     <title>Portraits</title>
 </head>
@@ -21,7 +22,7 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-
+        
     </header>
 
     <main class="border">
@@ -39,7 +40,7 @@
             </div>
             
         </div>
-        <div class="portraitBottonTop">
+        <div class="portraitBottonTop" data-aos="fade-up">
             <a href="#"><h3>TOP</h3></a>
         </div>
     </main>
@@ -57,6 +58,11 @@
             </ul>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
 
